@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Daniel Muravtsev](https://up.htmlacademy.ru/adaptive/30/user/1152991).
-* Наставник: `Андрей Изосимов`.
+* Наставник: [Андрей Изосимов](https://htmlacademy.ru/profile/id605037).
 
 ---
 
