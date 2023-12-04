@@ -9,10 +9,11 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__logo-wrapper">
+      <div class="main-header__icon-wrapper">
         <a class="main-header__link-icon" href="index.html">
-          <img class="main-header__icon" src="images/logo.svg" width="190" height="38" alt="Логотип Cat energy.">
+          <img class="main-header__icon" src="images/logo-icon-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
         </a>
+        <img class="main-header__logo" src="images/logo-header-mobile.svg" width="101" height="18" alt="Cat energy.">
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -40,7 +41,6 @@
         <div class="catalog__wrapper">
           <ul class="catalog__list product">
             <li class="product__item">
-              <img class="product__image" src="/source/images/chicken-small.png" width="68" height="86" alt="с курицей 500 грамм.">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
 
               <table class="product__options">
@@ -64,7 +64,6 @@
             </li>
 
             <li class="product__item">
-              <img class="product__image" src="/source/images/chicken-big.png" width="84" height="100" alt="с курицей 1000 грамм.">
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
 
               <table class="product__options">
@@ -88,7 +87,6 @@
             </li>
 
             <li class="product__item">
-              <img class="product__image" src="/source/images/fish-small.png" width="68" height="86" alt="с рыбой 500 грамм.">
               <h3 class="product__title">Cat Energy PRO 500 г</h3>
 
               <table class="product__options">
@@ -112,7 +110,6 @@
             </li>
 
             <li class="product__item">
-              <img class="product__image" src="/source/images/fish-big.png" width="84" height="100" alt="с рыбой 1000 грамм.">
               <h3 class="product__title">Cat Energy PRO 1000 г</h3>
 
               <table class="product__options">
@@ -136,7 +133,6 @@
             </li>
 
             <li class="product__item">
-              <img class="product__image" src="/source/images/buckwheat-small.png" width="68" height="86" alt="с гречкой 500 грамм.">
               <h3 class="product__title">Cat Energy SLIM 500 г</h3>
 
               <table class="product__options">
@@ -160,7 +156,6 @@
             </li>
 
             <li class="product__item">
-              <img class="product__image" src="/source/images/buckwheat-big.png" width="84" height="100" alt="с гречкой 1000 грамм.">
               <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
 
               <table class="product__options">
@@ -184,7 +179,6 @@
             </li>
 
             <li class="product__item">
-              <img class="product__image" src="/source/images/rice-small.png" width="68" height="86" alt="с рисом 500 грамм.">
               <h3 class="product__title">Cat Energy SLIM 500 г</h3>
 
               <table class="product__options">
@@ -207,10 +201,10 @@
               <a class="product__button button" href="#">заказать</a>
             </li>
 
-            <li class="product__footer">
-              <h3 class="product__subtitle">Показать еще 100500 товаров</h3>
-              <p class="product__subtext">На самом деле вкусов гораздо больше!</p>
-              <button class="product__show-button button" type="button">показать все</button>
+            <li class="product__show-more">
+              <h3 class="product__title">Показать еще 100500 товаров</h3>
+              <p class="product__subtitle">На самом деле вкусов гораздо больше!</p>
+              <a class="product__show-button button" href="#">показать все</a>
             </li>
           </ul>
         </div>
@@ -257,15 +251,17 @@
       </section>
 
       <section class="cooperation">
+        <h2 class="visually-hidden">Как с нами связаться.</h2>
         <div class="cooperation__wrapper">
-          <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="cooperation__city">Санкт-Петербург</p>
+          <p class="cooperation__title">приглашаем к сотрудничеству дилеров!</p>
+          <address class="cooperation__address">
+            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="cooperation__city">Санкт-Петербург</p>
+          </address>
         </div>
-      </section>
+        <div class="map">
 
-      <section class="location">
-        <h2 class="visually-hidden">Как нас найти</h2>
+        </div>
       </section>
 
     </main>
@@ -273,7 +269,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo-link" href="#">
-          <img src="/source/images/logo-footer.svg" width="128" height="23" alt="Cat Energy.">
+          <img src="images/logo-footer.svg" width="128" height="23" alt="Cat Energy.">
         </a>
 
         <ul class="footer__list social-list">

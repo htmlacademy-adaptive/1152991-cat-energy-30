@@ -10,10 +10,11 @@
 
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__logo-wrapper">
+      <div class="main-header__icon-wrapper">
         <a class="main-header__link-icon" href="index.html">
-          <img class="main-header__icon" src="images/logo.svg" width="190" height="38" alt="Логотип Cat energy.">
+          <img class="main-header__icon" src="images/logo-icon-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
         </a>
+        <img class="main-header__logo" src="images/logo-header-mobile.svg" width="101" height="18" alt="Cat energy.">
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -37,13 +38,13 @@
 
     <main class="page-main">
 
-      <div class="page-main__header content-wrapper">
+      <div class="page-main__header">
         <h1 class="page-main__title">Подбор программы</h1>
         <p class="page-main__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
       </div>
 
       <form class="form-feedback" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="form-feedback__content-wrapper content-wrapper">
+        <div class="form-feedback__content-wrapper">
           <fieldset class="form-feedback__fieldset">
             <legend class="visually-hidden">Анкета кота</legend>
 
@@ -54,11 +55,11 @@
               </li>
               <li class="form-feedback__item">
                 <label class="form-feedback__label form-label" for="catweight">Вес (кг):*</label>
-                <input class="form-feedback__input form-input" type="text" id="catweight" name="catweight" placeholder="7" required>
+                <input class="form-feedback__input form-input" type="number" id="catweight" name="catweight" placeholder="7" required>
               </li>
               <li class="form-feedback__item">
                 <label class="form-feedback__label form-label" for="catage">Возраст (лет):</label>
-                <input class="form-feedback__input form-input" type="text" id="catage" name="catage" placeholder="7">
+                <input class="form-feedback__input form-input" type="number" id="catage" name="catage" placeholder="7">
               </li>
             </ul>
           </fieldset>
@@ -68,11 +69,11 @@
 
             <ul class="form-feedback__list">
               <li class="form-feedback__item">
-                <input class="form-feedback__radio visually-hidden" type="radio" id="programslim" name="program" checked>
+                <input class="form-feedback__radio visually-hidden" type="radio" id="programslim" name="program" value="slim" checked>
                 <label class="form-feedback__label-radio form-label" for="programslim">Похудение</label>
               </li>
               <li class="form-feedback__item">
-                <input class="form-feedback__radio visually-hidden" type="radio" id="programpro" name="program">
+                <input class="form-feedback__radio visually-hidden" type="radio" id="programpro" name="program" value="mass">
                 <label class="form-feedback__label-radio form-label" for="programpro">Набор массы</label>
               </li>
               <li class="form-feedback__item">
@@ -97,11 +98,9 @@
             </ul>
           </fieldset>
 
-          <div class="form-feedback__fieldset">
+          <div class="form-feedback__textarea">
             <label class="form-feedback__legend heading" for="message">Комментарий</label>
-            <div class="form-feedback__message-wrapper">
-              <textarea class="form-feedback__textarea form-input" id="message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
-            </div>
+              <textarea class="form-feedback__textarea-text form-input" id="message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
 
           <fieldset class="form-feedback__fieldset">
@@ -109,19 +108,19 @@
 
             <ul class="form-feedback__list">
               <li class="form-feedback__item">
-                <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="sugarsubstitute" name="additional" checked>
+                <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="sugarsubstitute" name="sweetener" checked>
                 <label class="form-feedback__label-checkbox form-label" for="sugarsubstitute">Сахарозаменитель</label>
               </li>
               <li class="form-feedback__item">
-                <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="water" name="additional">
+                <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="water" name="water">
                 <label class="form-feedback__label-checkbox form-label" for="water">Питьевая вода</label>
               </li>
               <li class="form-feedback__item">
-                <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="milk" name="additional">
+                <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
                 <label class="form-feedback__label-checkbox form-label" for="milk">Молоко</label>
               </li>
               <li class="form-feedback__item">
-                <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="vitamins" name="additional">
+                <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
                 <label class="form-feedback__label-checkbox form-label" for="vitamins">Витамины</label>
               </li>
             </ul>
@@ -129,28 +128,30 @@
 
           <div class="form-feedback__submit-wrapper">
             <button class="form-feedback__button button" type="submit">Отправить заявку</button>
-            <p class="form-feedback__notification">* — Обязательные поля</p>
+            <span class="form-feedback__notification">* — Обязательные поля</span>
           </div>
         </div>
       </form>
 
       <section class="cooperation">
+        <h2 class="visually-hidden">Как с нами связаться.</h2>
         <div class="cooperation__wrapper">
-          <h2 class="cooperation__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="cooperation__city">Санкт-Петербург</p>
+          <p class="cooperation__title">приглашаем к сотрудничеству дилеров!</p>
+          <address class="cooperation__address">
+            <p class="cooperation__street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="cooperation__city">Санкт-Петербург</p>
+          </address>
         </div>
-      </section>
+        <div class="map">
 
-      <section class="location">
-        <h2 class="visually-hidden">Как нас найти</h2>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo-link" href="#">
-          <img src="/source/images/logo-footer.svg" width="128" height="23" alt="Cat Energy.">
+          <img src="images/logo-footer.svg" width="128" height="23" alt="Cat Energy.">
         </a>
 
         <ul class="footer__list social-list">
