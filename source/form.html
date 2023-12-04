@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Подбор программы</title>
@@ -12,9 +12,9 @@
     <header class="main-header">
       <div class="main-header__icon-wrapper">
         <a class="main-header__link-icon" href="index.html">
-          <img class="main-header__icon" src="images/logo-icon-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
+          <img class="main-header__icon" src="images/logo-icon.svg" width="33" height="38" alt="Логотип Cat energy.">
         </a>
-        <img class="main-header__logo" src="images/logo-header-mobile.svg" width="101" height="18" alt="Cat energy.">
+        <img class="main-header__logo" src="images/logo-header.svg" width="101" height="18" alt="Cat energy.">
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -98,10 +98,11 @@
             </ul>
           </fieldset>
 
-          <div class="form-feedback__textarea">
+          <fieldset class="form-feedback__textarea">
+            <legend class="visually-hidden">Комментарий.</legend>
             <label class="form-feedback__legend heading" for="message">Комментарий</label>
               <textarea class="form-feedback__textarea-text form-input" id="message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
+          </fieldset>
 
           <fieldset class="form-feedback__fieldset">
             <legend class="form-feedback__legend heading">Дополнительно</legend>
