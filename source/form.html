@@ -46,34 +46,34 @@
 
             <fieldset class="fields__group">
               <legend class="visually-hidden">Анкета кота</legend>
-              <label class="fields__label" for="name-cat">ИМЯ:*</label>
+              <label class="fields__text" for="name-cat">ИМЯ:*</label>
               <input class="fields__input"  id="name-cat" type="text" name="name-cat" placeholder="барсик" required>
 
-              <label class="fields__label" for="weight-cat">Вес (кг):*</label>
+              <label class="fields__text" for="weight-cat">Вес (кг):*</label>
               <input class="fields__input"  id="weight-cat" type="number" name="weight-cat" placeholder="7" required>
 
-              <label class="fields__label" for="age-cat">Возраст (лет):</label>
+              <label class="fields__text" for="age-cat">Возраст (лет):</label>
               <input class="fields__input"  id="age-cat" type="number" name="age-cat" placeholder="7">
 
-              <ul class="fields__list program">
-                <li class="program__item">
+              <ul class="fields__list">
+                <li class="fields__item">
                   <label>
-                    <input class="visually-hidden program__input" type="radio" name="program" value="slim" checked>
-                    <span class="program__label">Гостиница</span>
+                    <input class="fields__radio" type="radio" name="program" value="slim" checked>
+                    <span class="fields__text">Похудение</span>
                   </label>
                 </li>
 
-                <li class="program__item">
+                <li class="fields__item">
                   <label>
-                    <input class="visually-hidden program__input" type="radio" name="program" value="mass">
-                    <span class="program__label">Набор массы</span>
+                    <input class="fields__radio" type="radio" name="program" value="mass">
+                    <span class="fields__text">Набор массы</span>
                   </label>
                 </li>
 
-                <li class="program__item">
+                <li class="fields__item">
                   <label>
-                    <input class="visually-hidden program__input" type="radio" name="program" value="advice">
-                    <span class="program__label">Не знаю (Нужен ваш совет)</span>
+                    <input class="fields__radio" type="radio" name="program" value="advice">
+                    <span class="fields__text">Не знаю (Нужен ваш совет)</span>
                   </label>
                 </li>
               </ul>
@@ -82,10 +82,10 @@
             <fieldset class="fields__group">
               <legend class="fields__title">Контактные данные (владельца кота)</legend>
 
-              <label class="fields__label" for="email">E-mail:*</label>
+              <label class="fields__text" for="email">E-mail:*</label>
               <input class="fields__input"  id="email" type="email" name="email" placeholder="кuklachev@gmail.com" required>
 
-              <label class="fields__label" for="tel">Телефон:*</label>
+              <label class="fields__text" for="tel">Телефон:*</label>
               <input class="fields__input"  id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
             </fieldset>
 
@@ -97,32 +97,32 @@
             <fieldset class="fields__group">
               <legend class="fields__title">Дополнительно</legend>
 
-              <ul class="fields__list additionally">
-                <li class="additionally__item">
+              <ul class="fields__list">
+                <li class="fields__item">
                   <label>
-                    <input class="visually-hidden additionally__input" type="checkbox" name="sweetener" value="sweetener" checked>
-                    <span class="additionally__label">сахарозаменитель</span>
+                    <input class="visually-hidden fields__checkbox" type="checkbox" name="sweetener" value="sweetener" checked>
+                    <span class="fields__text">сахарозаменитель</span>
                   </label>
                 </li>
 
-                <li class="additionally__item">
+                <li class="fields__item">
                   <label>
-                    <input class="visually-hidden additionally__input" type="checkbox" name="water" value="water">
-                    <span class="additionally__label">питьевая вода</span>
+                    <input class="visually-hidden fields__checkbox" type="checkbox" name="water" value="water">
+                    <span class="fields__text">питьевая вода</span>
                   </label>
                 </li>
 
-                <li class="additionally__item">
+                <li class="fields__item">
                   <label>
-                    <input class="visually-hidden additionally__input" type="checkbox" name="milk" value="milk">
-                    <span class="additionally__label">молоко</span>
+                    <input class="visually-hidden fields__checkbox" type="checkbox" name="milk" value="milk">
+                    <span class="fields__text">молоко</span>
                   </label>
                 </li>
 
-                <li class="additionally__item">
+                <li class="fields__item">
                   <label>
-                    <input class="visually-hidden additionally__input" type="checkbox" name="vitamins" value="vitamins">
-                    <span class="additionally__label">витамины</span>
+                    <input class="visually-hidden fields__checkbox" type="checkbox" name="vitamins" value="vitamins">
+                    <span class="fields__text">витамины</span>
                   </label>
                 </li>
               </ul>
