@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <title>Подбор программы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
 
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__icon-wrapper">
-        <a class="main-header__link-icon" href="index.html">
-          <img class="main-header__icon" src="images/logo-icon.svg" width="33" height="38" alt="Логотип Cat energy.">
+      <div class="main-header__wrapper">
+        <a class="main-header__link" href="index.html">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/icon-desktop.svg" width="70" height="60">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/icon-tablet.svg" width="60" height="50">
+            <img class="main-header__icon" src="images/icon-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
+          </picture>
+
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-header.svg" width="118" height="21">
+            <img class="main-header__logo" src="images/logo-header.svg" width="101" height="18" alt="Cat energy.">
+          </picture>
         </a>
-        <img class="main-header__logo" src="images/logo-header.svg" width="101" height="18" alt="Cat energy.">
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -152,7 +164,7 @@
     <footer class="footer">
       <div class="footer__wrapper">
         <a class="footer__logo-link" href="#">
-          <img src="images/logo-footer.svg" width="128" height="23" alt="Cat Energy.">
+          <img src="images/logo-footer.svg" width="128" height="24" alt="Cat Energy.">
         </a>
 
         <ul class="footer__list social-list">
