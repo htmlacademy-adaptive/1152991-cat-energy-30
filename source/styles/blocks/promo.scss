@@ -1,0 +1,27 @@
+.promo {
+  color: #ffffff;
+}
+
+.promo__wrapper {
+  background: rgba(104, 183, 56, 0.85);
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  @include button;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

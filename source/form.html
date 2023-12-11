@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
@@ -50,9 +50,9 @@
 
     <main class="page-main">
 
-      <div class="page-main__header">
-        <h1 class="page-main__title">Подбор программы</h1>
-        <p class="page-main__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <div class="page-main__header lead">
+        <h1 class="lead__title">Подбор программы</h1>
+        <p class="lead__subtitle">Заполните анкету и мы подберем программу питания для вашего кота</p>
       </div>
 
       <form class="form-feedback" action="https://echo.htmlacademy.ru/" method="post">
@@ -62,16 +62,16 @@
 
             <ul class="form-feedback__list">
               <li class="form-feedback__item">
-                <label class="form-feedback__label form-label" for="catname">Имя:*</label>
-                <input class="form-feedback__input form-input" type="text" id="catname" name="catname" placeholder="Барсик" required>
+                <label class="form-feedback__label" for="catname">Имя:*</label>
+                <input class="form-feedback__input" type="text" id="catname" name="catname" placeholder="Барсик" required>
               </li>
               <li class="form-feedback__item">
-                <label class="form-feedback__label form-label" for="catweight">Вес (кг):*</label>
-                <input class="form-feedback__input form-input" type="number" id="catweight" name="catweight" placeholder="7" required>
+                <label class="form-feedback__label" for="catweight">Вес (кг):*</label>
+                <input class="form-feedback__input" type="number" id="catweight" name="catweight" placeholder="7" required>
               </li>
               <li class="form-feedback__item">
-                <label class="form-feedback__label form-label" for="catage">Возраст (лет):</label>
-                <input class="form-feedback__input form-input" type="number" id="catage" name="catage" placeholder="7">
+                <label class="form-feedback__label" for="catage">Возраст (лет):</label>
+                <input class="form-feedback__input" type="number" id="catage" name="catage" placeholder="7">
               </li>
             </ul>
           </fieldset>
@@ -82,59 +82,59 @@
             <ul class="form-feedback__list">
               <li class="form-feedback__item">
                 <input class="form-feedback__radio visually-hidden" type="radio" id="programslim" name="program" value="slim" checked>
-                <label class="form-feedback__label-radio form-label" for="programslim">Похудение</label>
+                <label class="form-feedback__label-radio" for="programslim">Похудение</label>
               </li>
               <li class="form-feedback__item">
                 <input class="form-feedback__radio visually-hidden" type="radio" id="programpro" name="program" value="mass">
-                <label class="form-feedback__label-radio form-label" for="programpro">Набор массы</label>
+                <label class="form-feedback__label-radio" for="programpro">Набор массы</label>
               </li>
               <li class="form-feedback__item">
                 <input class="form-feedback__radio visually-hidden" type="radio" id="advice" name="program">
-                <label class="form-feedback__label-radio form-label" for="advice">Не знаю (Нужен ваш совет)</label>
+                <label class="form-feedback__label-radio" for="advice">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form-feedback__fieldset">
-            <legend class="form-feedback__legend heading">Контактные данные (владельца кота)</legend>
+            <legend class="form-feedback__legend">Контактные данные (владельца кота)</legend>
 
             <ul class="form-feedback__list">
               <li class="form-feedback__item">
-                <label class="form-feedback__label form-label" for="email">E-mail:*</label>
-                <input class="form-feedback__input form-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <label class="form-feedback__label" for="email">E-mail:*</label>
+                <input class="form-feedback__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="form-feedback__item">
-                <label class="form-feedback__label form-label" for="phone">Телефон:*</label>
-                <input class="form-feedback__input form-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                <label class="form-feedback__label" for="phone">Телефон:*</label>
+                <input class="form-feedback__input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form-feedback__textarea">
             <legend class="visually-hidden">Комментарий.</legend>
-            <label class="form-feedback__legend heading" for="message">Комментарий</label>
-              <textarea class="form-feedback__textarea-text form-input" id="message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <label class="form-feedback__legend" for="message">Комментарий</label>
+              <textarea class="form-feedback__textarea-text" id="message" name="message" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form-feedback__fieldset">
-            <legend class="form-feedback__legend heading">Дополнительно</legend>
+            <legend class="form-feedback__legend">Дополнительно</legend>
 
             <ul class="form-feedback__list">
               <li class="form-feedback__item">
                 <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="sugarsubstitute" name="sweetener" checked>
-                <label class="form-feedback__label-checkbox form-label" for="sugarsubstitute">Сахарозаменитель</label>
+                <label class="form-feedback__label-checkbox" for="sugarsubstitute">Сахарозаменитель</label>
               </li>
               <li class="form-feedback__item">
                 <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="water" name="water">
-                <label class="form-feedback__label-checkbox form-label" for="water">Питьевая вода</label>
+                <label class="form-feedback__label-checkbox" for="water">Питьевая вода</label>
               </li>
               <li class="form-feedback__item">
                 <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="milk" name="milk">
-                <label class="form-feedback__label-checkbox form-label" for="milk">Молоко</label>
+                <label class="form-feedback__label-checkbox" for="milk">Молоко</label>
               </li>
               <li class="form-feedback__item">
                 <input class="form-feedback__checkbox visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-                <label class="form-feedback__label-checkbox form-label" for="vitamins">Витамины</label>
+                <label class="form-feedback__label-checkbox" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
@@ -195,7 +195,7 @@
 
         <div class="footer__developer-wrapper developer">
           <a class="developer__link" href="#">
-            <h3 class="developer__title">HTML Academy</h3>
+            <p class="developer__title">HTML Academy</p>
             <svg class="developer__logo" viewBox="0 0 27 34" width="27" height="34" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
               <g clip-path="url(#a)">
                 <path d="m13.64.02-.14-.02-13.5 1.4v24.61l13.5 7.99 13.5-7.99v-24.6l-13.36-1.4Zm11.6 25-11.74 6.94-11.73-6.94v-10.1l11.68 6.93.02 1.25-8.02-4.75v1.23l8.04 4.8.02 1.3-8.05-4.76v1.22l8.04 4.81 8.12-4.83v-5.21l3.62-2.15v10.26Zm0-11.57-3.23 1.88-1.48.88-7.06-4.19-.01 1.23 6.04 3.57-.06.03-.13.07-.86.5-4.98-2.95-.01 1.22 3.93 2.33-.93.61-.02.01-2.97-1.74-.01 1.23 1.94 1.13-1.98 1.19-11.62-6.87 11.63-6.96 11.8 6.83Zm0-1.22-11.8-6.92-11.67 6.91v-9.23l11.73-1.23 11.73 1.23v9.24Z" fill="currentColor"/>

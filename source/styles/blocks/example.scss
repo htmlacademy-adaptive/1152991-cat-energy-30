@@ -1,0 +1,37 @@
+.example {
+  background-color: #eaeaea;
+  color: #000000;
+}
+
+.example__title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.example__subtitle {
+  color: #444444;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.example__caption {
+  text-align: center;
+  font-size: 24px;
+}
+
+.example__description {
+  font-family: $secondary-font;
+  color: #444444;
+  text-align: center;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.example__expenses {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
