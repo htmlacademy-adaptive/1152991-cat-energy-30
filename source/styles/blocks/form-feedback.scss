@@ -6,22 +6,27 @@
 
 .form-feedback__label {
   @include form-label;
+  font-family: $primary-font;
 }
 
 .form-feedback__input {
   @include form-input;
+  font-family: $primary-font;
 }
 
 .form-feedback__label-radio {
   @include form-label;
+  font-family: $primary-font;
 }
 
 .form-feedback__textarea-text {
   @include form-input;
+  font-family: $primary-font;
 }
 
 .form-feedback__label-checkbox {
   @include form-label;
+  font-family: $primary-font;
 }
 
 .form-feedback__button {

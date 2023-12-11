@@ -1,12 +1,13 @@
 .example {
   background-color: #eaeaea;
+  color: #000000;
 }
 
 .example__title {
-  color: #000000;
   text-align: center;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 }
 
 .example__subtitle {
@@ -16,7 +17,6 @@
 }
 
 .example__caption {
-  color: #000000;
   text-align: center;
   font-size: 24px;
 }
@@ -30,7 +30,6 @@
 }
 
 .example__expenses {
-  color: #000000;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
