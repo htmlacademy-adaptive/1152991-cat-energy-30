@@ -1,0 +1,41 @@
+.form-feedback__legend {
+  color: #000000;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.form-feedback__label {
+  @include form-label;
+}
+
+.form-feedback__input {
+  @include form-input;
+}
+
+.form-feedback__label-radio {
+  @include form-label;
+}
+
+.form-feedback__textarea-text {
+  @include form-input;
+}
+
+.form-feedback__label-checkbox {
+  @include form-label;
+}
+
+.form-feedback__button {
+  @include button;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.form-feedback__notification {
+  font-family: $secondary-font;
+  color: #000000;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+}

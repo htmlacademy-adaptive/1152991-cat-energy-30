@@ -1,0 +1,30 @@
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-display: swap;
+    src: $font-src;
+  }
+}
+
+@mixin button($bg-color: #68B738, $text-color: #ffffff) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: 0;
+}
+
+@mixin form-label($color: #444444, $font-size: 16px, $line-height: 18px) {
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: uppercase;
+}
+
+@mixin form-input($color: #444444, $font-size: 16px, $line-height: 18px) {
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+  text-transform: uppercase;
+}
+
