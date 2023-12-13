@@ -1,0 +1,9 @@
+.logo-header-desktop {
+  width: 118px;
+  height: 21px;
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+  }
+}
