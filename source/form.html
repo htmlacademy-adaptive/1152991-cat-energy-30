@@ -16,13 +16,17 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__link" href="index.html">
-          <img class="icon-desktop" src="images/icon-desktop.svg" width="70" height="59" alt="Логотип Cat energy.">
-          <img class="icon-tablet" src="images/icon-tablet.svg" width="60" height="50" alt="">
-          <img class="icon-mobile" src="images/icon-mobile.svg" width="33" height="38" alt="">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/icon-desktop.svg" width="70" height="60">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/icon-tablet.svg" width="60" height="50">
+            <img class="main-header__icon" src="images/icon-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
+          </picture>
 
-          <img class="logo-header-desktop" src="images/logo-header-desktop.svg" width="118" height="21" alt="Cat energy.">
-          <img class="logo-header-tablet" src="images/logo-header-tablet.svg" width="101" height="18" alt="">
-          <img class="logo-header-mobile" src="images/logo-header-mobile.svg" width="101" height="18" alt="">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-header-tablet.svg" width="118" height="21">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-header-tablet.svg" width="101" height="18">
+            <img class="main-header__logo" src="images/logo-header-mobile.svg" width="101" height="18" alt="Cat energy.">
+          </picture>
         </a>
       </div>
       <nav class="main-nav">
@@ -167,7 +171,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <svg width="28" height="22">
-                <use href="images/sprite-vk.svg#vk"></use>
+                <use href="images/sprite.svg#vk"></use>
               </svg>
               <h3 class="visually-hidden">Мы в Вконтакте.</h3>
             </a>
@@ -175,7 +179,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <svg width="28" height="22">
-                <use href="images/sprite-youtube.svg#youtube"></use>
+                <use href="images/sprite.svg#youtube"></use>
               </svg>
               <h3 class="visually-hidden">Мы в Ютубе.</h3>
             </a>
@@ -183,7 +187,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <svg width="28" height="22">
-                <use href="images/sprite-telegram.svg#telegram"></use>
+                <use href="images/sprite.svg#telegram"></use>
               </svg>
               <h3 class="visually-hidden">Мы в Телеграме.</h3>
             </a>
@@ -194,7 +198,7 @@
           <a class="developer__link" href="#">
             <p class="developer__title">HTML Academy</p>
             <svg class="developer__logo"  width="27" height="34">
-              <use href="images/sprite-html-academy.svg#html-academy"></use>
+              <use href="images/sprite.svg#html-academy"></use>
             </svg>
           </a>
         </div>

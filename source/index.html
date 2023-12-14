@@ -15,13 +15,17 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__link" href="index.html">
-          <img class="icon-desktop" src="images/icon-desktop.svg" width="70" height="59" alt="Логотип Cat energy.">
-          <img class="icon-tablet" src="images/icon-tablet.svg" width="60" height="50" alt="">
-          <img class="icon-mobile" src="images/icon-mobile.svg" width="33" height="38" alt="">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/icon-desktop.svg" width="70" height="60">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/icon-tablet.svg" width="60" height="50">
+            <img class="main-header__icon" src="images/icon-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
+          </picture>
 
-          <img class="logo-header-desktop" src="images/logo-header-desktop.svg" width="118" height="21" alt="Cat energy.">
-          <img class="logo-header-tablet" src="images/logo-header-tablet.svg" width="101" height="18" alt="">
-          <img class="logo-header-mobile" src="images/logo-header-mobile.svg" width="101" height="18" alt="">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-header-tablet.svg" width="118" height="21">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-header-tablet.svg" width="101" height="18">
+            <img class="main-header__logo" src="images/logo-header-mobile.svg" width="101" height="18" alt="Cat energy.">
+          </picture>
         </a>
       </div>
       <nav class="main-nav">
@@ -45,7 +49,6 @@
     </header>
 
     <main class="main-container">
-
       <section class="promo">
         <div class="promo__wrapper">
           <h1 class="promo__title">Функциональное питание для котов</h1>
@@ -135,13 +138,19 @@
           <div class="demo-progress">
             <div class="demo-progress__wrapper-before">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-tablet-before@1x.webp 1x, images/cat-tablet-before@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-mobile-before@1x.webp 1x, images/cat-mobile-before@2x.webp 2x">
+
                 <source type="image/png" media="(min-width: 768px)" srcset="images/cat-tablet-before@1x.png 1x, images/cat-tablet-before@2x.png 2x" width="560" height="512">
-                <img src="images/cat-mobile-before@1x.png" srcset="images/cat-mobile-before@2x.png 2x" width="280" height="256" alt="До.">
+                <img src="images/cat-mobile-befor@1x.png" srcset="images/cat-mobile-befor@2x.png 2x" width="280" height="256" alt="До.">
               </picture>
             </div>
 
             <div class="demo-progress__wrapper-after">
               <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-tablet-after@1x.webp 1x, images/cat-tablet-after@2x.webp 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-mobile-after@1x.webp 1x, images/cat-mobile-after@2x.webp 2x">
+
                 <source type="image/png" media="(min-width: 768px)" srcset="images/cat-tablet-after@1x.png 1x, images/cat-tablet-after@2x.png 2x" width="560" height="512">
                 <img src="images/cat-mobile-after@1x.png" srcset="images/cat-mobile-after@2x.png 2x" width="280" height="256" alt="После.">
               </picture>

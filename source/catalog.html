@@ -15,13 +15,17 @@
     <header class="main-header">
       <div class="main-header__wrapper">
         <a class="main-header__link" href="index.html">
-          <img class="icon-desktop" src="images/icon-desktop.svg" width="70" height="59" alt="Логотип Cat energy.">
-          <img class="icon-tablet" src="images/icon-tablet.svg" width="60" height="50" alt="">
-          <img class="icon-mobile" src="images/icon-mobile.svg" width="33" height="38" alt="">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/icon-desktop.svg" width="70" height="60">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/icon-tablet.svg" width="60" height="50">
+            <img class="main-header__icon" src="images/icon-mobile.svg" width="33" height="38" alt="Логотип Cat energy.">
+          </picture>
 
-          <img class="logo-header-desktop" src="images/logo-header-desktop.svg" width="118" height="21" alt="Cat energy.">
-          <img class="logo-header-tablet" src="images/logo-header-tablet.svg" width="101" height="18" alt="">
-          <img class="logo-header-mobile" src="images/logo-header-mobile.svg" width="101" height="18" alt="">
+          <picture>
+            <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-header-tablet.svg" width="118" height="21">
+            <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-header-tablet.svg" width="101" height="18">
+            <img class="main-header__logo" src="images/logo-header-mobile.svg" width="101" height="18" alt="Cat energy.">
+          </picture>
         </a>
       </div>
       <nav class="main-nav">
@@ -52,6 +56,9 @@
             <li class="product__item">
               <a class="product__link-image" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-small-tablet@1x.webp 1x, images/chicken-small-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="images/chicken-small-mobile@1x.webp, images/chicken-small-mobile@2x.webp 2x" width="68" height="86">
+
                   <source type="image/png" media="(min-width: 768px)" srcset="images/chicken-small-tablet@1x.png 1x, images/chicken-small-tablet@2x.png 2x" width="161" height="172">
                   <img src="images/chicken-small-mobile@1x.png" srcset="images/chicken-small-mobile@2x.png 2x" width="68" height="86" alt="с курицей 500 грамм.">
                 </picture>
@@ -62,7 +69,7 @@
               <table class="product__options">
                 <tbody>
                   <tr>
-                    <td class="product__options-cell">Объем</td>
+                    <td class="product__options-cell">Масса</td>
                     <td class="product__options-cell">500 г</td>
                   </tr>
                   <tr>
@@ -82,6 +89,10 @@
             <li class="product__item">
               <a class="product__link-image" href="#">
                 <picture>
+                  <source type="image/png" media="(min-width: 1440px)" srcset="images/chicken-big-desktop@1x.webp 1x, images/chicken-big-desktop@2x.webp 2x" width="172" height="196"">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-big-tablet@1x.webp 1x, images/chicken-big-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" srcset="images/chicken-big-mobile@1x.webp, images/chicken-big-mobile@2x.webp 2x" width="84" height="100">
+
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/chicken-big-desktop@1x.png 1x, images/chicken-big-desktop@2x.png 2x" width="172" height="196">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/chicken-big-tablet@1x.png 1x, images/chicken-big-tablet@2x.png 2x" width="168" height="200">
                   <img src="images/chicken-big-mobile@1x.png" srcset="images/chicken-big-mobile@2x.png 2x" width="84" height="100" alt="с курицей 1000 грамм.">
@@ -94,7 +105,7 @@
               <table class="product__options">
                 <tbody>
                   <tr>
-                    <td class="product__options-cell">Объем</td>
+                    <td class="product__options-cell">Масса</td>
                     <td class="product__options-cell">1000 г</td>
                   </tr>
                   <tr>
@@ -114,6 +125,9 @@
             <li class="product__item">
               <a class="product__link-image" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-small-tablet@1x.webp 1x, images/fish-small-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="images/fish-small-mobile@1x.webp, images/fish-small-mobile@2x.webp 2x" width="68" height="86">
+
                   <source type="image/png" media="(min-width: 768px)" srcset="images/fish-small-tablet@1x.png 1x, images/fish-small-tablet@2x.png 2x" width="161" height="172">
                   <img src="images/fish-small-mobile@1x.png" srcset="images/fish-small-mobile@2x.png 2x" width="68" height="86" alt="с рыбой 500 грамм.">
                 </picture>
@@ -125,7 +139,7 @@
               <table class="product__options">
                 <tbody>
                   <tr>
-                    <td class="product__options-cell">Объем</td>
+                    <td class="product__options-cell">Масса</td>
                     <td class="product__options-cell">500 г</td>
                   </tr>
                   <tr>
@@ -145,6 +159,10 @@
             <li class="product__item">
               <a class="product__link-image" href="#">
                 <picture>
+                  <source type="image/png" media="(min-width: 1440px)" srcset="images/fish-big-desktop@1x.webp 1x, images/fish-big-desktop@2x.webp 2x" width="172" height="196"">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-big-tablet@1x.webp 1x, images/fish-big-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" srcset="images/chicken-big-mobile@1x.webp, images/fish-big-mobile@2x.webp 2x" width="84" height="100">
+
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/fish-big-desktop@1x.png 1x, images/fish-big-desktop@2x.png 2x" width="172" height="196">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/fish-big-tablet@1x.png 1x, images/fish-big-tablet@2x.png 2x" width="168" height="200">
                   <img src="images/fish-big-mobile@1x.png" srcset="images/fish-big-mobile@2x.png 2x" width="84" height="100" alt="с рыбой 1000 грамм.">
@@ -157,7 +175,7 @@
               <table class="product__options">
                 <tbody>
                   <tr>
-                    <td class="product__options-cell">Объем</td>
+                    <td class="product__options-cell">Масса</td>
                     <td class="product__options-cell">1000 г</td>
                   </tr>
                   <tr>
@@ -177,6 +195,9 @@
             <li class="product__item">
               <a class="product__link-image" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-small-tablet@1x.webp 1x, images/buckwheat-small-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="images/buckwheat-small-mobile@1x.webp, images/buckwheat-small-mobile@2x.webp 2x" width="68" height="86">
+
                   <source type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-small-tablet@1x.png 1x, images/buckwheat-small-tablet@2x.png 2x" width="161" height="172">
                   <img src="images/buckwheat-small-mobile@1x.png" srcset="images/buckwheat-small-mobile@2x.png 2x" width="68" height="86" alt="с гречкой 500 грамм.">
                 </picture>
@@ -188,7 +209,7 @@
               <table class="product__options">
                 <tbody>
                   <tr>
-                    <td class="product__options-cell">Объем</td>
+                    <td class="product__options-cell">Масса</td>
                     <td class="product__options-cell">500 г</td>
                   </tr>
                   <tr>
@@ -208,6 +229,10 @@
             <li class="product__item">
               <a class="product__link-image" href="#">
                 <picture>
+                  <source type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-big-desktop@1x.webp 1x, images/buckwheat-big-desktop@2x.webp 2x" width="172" height="196"">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-big-tablet@1x.webp 1x, images/buckwheat-big-tablet@2x.webp 2x" width="168" height="200">
+                  <source type="image/webp" srcset="images/buckwheat-big-mobile@1x.webp, images/buckwheat-big-mobile@2x.webp 2x" width="84" height="100">
+
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/buckwheat-big-desktop@1x.png 1x, images/buckwheat-big-desktop@2x.png 2x" width="172" height="196">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/buckwheat-big-tablet@1x.png 1x, images/buckwheat-big-tablet@2x.png 2x" width="168" height="200">
                   <img src="images/buckwheat-big-mobile@1x.png" srcset="images/buckwheat-big-mobile@2x.png 2x" width="84" height="100" alt="с рыбой 1000 грамм.">
@@ -220,7 +245,7 @@
               <table class="product__options">
                 <tbody>
                   <tr>
-                    <td class="product__options-cell">Объем</td>
+                    <td class="product__options-cell">Масса</td>
                     <td class="product__options-cell">1000 г</td>
                   </tr>
                   <tr>
@@ -240,6 +265,9 @@
             <li class="product__item">
               <a class="product__link-image" href="#">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/rice-small-tablet@1x.webp 1x, images/rice-small-tablet@2x.webp 2x" width="161" height="172">
+                  <source type="image/webp" srcset="images/rice-small-mobile@1x.webp, images/rice-small-mobile@2x.webp 2x" width="68" height="86">
+
                   <source type="image/png" media="(min-width: 768px)" srcset="images/rice-small-tablet@1x.png 1x, images/rice-small-tablet@2x.png 2x" width="161" height="172">
                   <img src="images/rice-small-mobile@1x.png" srcset="images/rice-small-mobile@2x.png 2x" width="68" height="86" alt="с рисом 500 грамм.">
                 </picture>
@@ -251,7 +279,7 @@
               <table class="product__options">
                 <tbody>
                   <tr>
-                    <td class="product__options-cell">Объем</td>
+                    <td class="product__options-cell">Масса</td>
                     <td class="product__options-cell">500 г</td>
                   </tr>
                   <tr>
@@ -342,7 +370,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <svg width="28" height="22">
-                <use href="images/sprite-vk.svg#vk"></use>
+                <use href="images/sprite.svg#vk"></use>
               </svg>
               <h3 class="visually-hidden">Мы в Вконтакте.</h3>
             </a>
@@ -350,7 +378,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <svg width="28" height="22">
-                <use href="images/sprite-youtube.svg#youtube"></use>
+                <use href="images/sprite.svg#youtube"></use>
               </svg>
               <h3 class="visually-hidden">Мы в Ютубе.</h3>
             </a>
@@ -358,7 +386,7 @@
           <li class="social-list__item">
             <a class="social-list__link" href="#">
               <svg width="28" height="22">
-                <use href="images/sprite-telegram.svg#telegram"></use>
+                <use href="images/sprite.svg#telegram"></use>
               </svg>
               <h3 class="visually-hidden">Мы в Телеграме.</h3>
             </a>
@@ -369,7 +397,7 @@
           <a class="developer__link" href="#">
             <p class="developer__title">HTML Academy</p>
             <svg class="developer__logo"  width="27" height="34">
-              <use href="images/sprite-html-academy.svg#html-academy"></use>
+              <use href="images/sprite.svg#html-academy"></use>
             </svg>
           </a>
         </div>
