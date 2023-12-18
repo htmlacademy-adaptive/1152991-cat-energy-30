@@ -1,5 +1,17 @@
 .main-header {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 220px);
+  }
 }
 
 .main-header__link:hover {
@@ -9,4 +21,3 @@
 .main-header__link:active {
   opacity: 0.6;
 }
-
