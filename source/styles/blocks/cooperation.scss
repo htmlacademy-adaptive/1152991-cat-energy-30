@@ -1,3 +1,20 @@
+.cooperation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 140px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+    margin: 0;
+    margin-left: 110px;
+  }
+}
+
 .cooperation__title {
   color: #111111;
   font-size: 16px;

@@ -1,3 +1,32 @@
+.advantages {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 220px);
+  }
+}
+
+.advantages__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .advantages__title {
   color: #000000;
   text-align: center;

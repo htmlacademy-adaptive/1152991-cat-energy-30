@@ -1,21 +1,44 @@
 .promo {
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 220px);
+  }
 }
 
 .promo__wrapper {
   background: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $tablet-width) {
+    background: #ffffff;
+  }
 }
 
 .promo__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .promo__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+  }
 }
 
 .promo__link {

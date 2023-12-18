@@ -1,3 +1,26 @@
 .footer {
   background-color: #f2f2f2;
 }
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 40px);
+  margin: 0 auto;
+  gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 220px);
+  }
+}
+
+.footer__logo-link {
+  align-self: center;
+}

@@ -1,3 +1,16 @@
+.form-feedback {
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 140px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 220px);
+  }
+}
+
 .form-feedback__legend {
   color: #000000;
   font-size: 24px;

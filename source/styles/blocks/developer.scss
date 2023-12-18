@@ -1,7 +1,18 @@
 .developer__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-decoration: none;
   color: #444444;
   fill: #666666;
+
+  @media (min-width: $tablet-width) {
+    min-height: 147px;
+
+    & .developer__logo {
+      margin-left: 23px;
+    }
+  }
 }
 
 .developer__title {

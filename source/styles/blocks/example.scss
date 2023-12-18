@@ -1,6 +1,25 @@
 .example {
   background-color: #eaeaea;
   color: #000000;
+
+  width: calc(100% - 40px);
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: calc(100% - 60px);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.example__description-wrapper {
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+  }
 }
 
 .example__title {
@@ -14,6 +33,32 @@
   color: #444444;
   font-size: 14px;
   line-height: 18px;
+}
+
+.example__item-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    & .example__expenses {
+      margin-left: 167px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 336px;
+    justify-content: start;
+
+    & .example__expenses {
+      margin-left: 0;
+    }
+  }
+}
+
+.example__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .example__caption {
