@@ -1,16 +1,133 @@
 .main-header {
-  width: calc(100% - 40px);
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  background-color: #ffffff;
+  min-height: 65px;
+  position: relative;
+  background-color: $primary-background-color;
+  border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 60px);
+    display: flex;
+    justify-content: space-between;
+    max-width: 708px;
+    margin: 0 auto;
+    padding-top: 17px;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
-    width: calc(100% - 220px);
+    max-width: 1220px;
+    padding-top: 48px;
+  }
+}
+
+.main-header__page {
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
+  }
+}
+
+.main-header__container {
+  padding: 13px 0 9px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.main-header__container--catalog {
+
+}
+
+.main-header__toggle {
+  position: absolute;
+  right: 21px;
+  top: 22px;
+  z-index: 2;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  background-color: $primary-background-color;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $secondary-font-color;
+  box-shadow: 0 8px 0 0 $secondary-font-color, 0 16px 0 0 $secondary-font-color;
+}
+
+.main-header__toggle:active::before {
+  background-color: opacify($secondary-font-color, 0.3);
+  box-shadow:
+    0 8px 0 0 opacify($secondary-font-color, 0.3),
+    0 16px 0 0 opacify($secondary-font-color, 0.3);
+}
+
+.main-header__toggle.main-header__toggle--close {
+  right: 17px;
+  top: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 11px;
+    width: 24px;
+    height: 2px;
+    background-color: $secondary-font-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: opacify($secondary-font-color, 0.3);
+  }
+}
+
+.main-header__link {
+  display: inline-block;
+}
+
+.main-header__wrapper {
+  display: flex;
+  align-items: center;
+
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+  }
+}
+
+
+.main-header__icon {
+  margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
   }
 }
 

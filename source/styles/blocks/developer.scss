@@ -1,17 +1,23 @@
+.developer {
+  @media (min-width: $tablet-width) {
+    min-height: 37px;
+  }
+}
+
 .developer__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
-  color: #444444;
+  color: $primary-font-color;
   fill: #666666;
+  max-height: 34px;
+  margin-top: 19px;
 
   @media (min-width: $tablet-width) {
-    min-height: 147px;
-
-    & .developer__logo {
-      margin-left: 23px;
-    }
+    margin: 0;
+    width: 163px;
+    min-height: 37px;
   }
 }
 
@@ -19,13 +25,14 @@
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
 }
 
 .developer__link:hover {
-  fill: #68b738;
+  fill: $icon-color-hover;
 }
 
 .developer__link:active {
   opacity: 0.3;
-  fill: #68b738;
+  fill: $icon-color-hover;
 }

@@ -1,0 +1,15 @@
+.form-feedback-list {
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    max-width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
+}

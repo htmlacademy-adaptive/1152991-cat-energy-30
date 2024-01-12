@@ -1,5 +1,133 @@
 .demo-progress {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background: #eaeaea;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-right: 110px;
+    width: 100%;
+    align-self: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 100%;
+    background: #f2f2f2;
+  }
+}
+
+.demo-progress__wrapper {
+  position: relative;
+  height: 256px;
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    margin: 0 auto;
+    height: 462px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 720px;
+    margin: 0;
+  }
+}
+
+.demo-progress__wrapper-before {
+  position: absolute;
+  clip-path: inset(0 50% 0 0);
+  left: 19px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 96px;
+    left: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 83px;
+    left: 50px;
+  }
+}
+
+.demo-progress__wrapper-after {
+  position: absolute;
+  clip-path: inset(0 0 0 50%);
+  right: 19px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 96px;
+    right: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 82px;
+    right: 110px;
+  }
+}
+
+.demo-progress__range {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  z-index: 2;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    border-radius: 2px;
+    background: #666666;
+    height: 256px;
+    z-index: -1;
+    pointer-events: none;
+
+    @media (min-width: $tablet-width) {
+      left: 50%;
+      top: 19px;
+      height: 512px;
+    }
+  }
+
+  &:hover::before {
+    background: #68B738;
+  }
+
+  &:active::before {
+    background: #68B738;
+    opacity: .6;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 50%;
+    top: 107px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 46%;
+    top: 121px;
+  }
+}
+
+.demo-progress__svg {
+  fill: #666666;
+
+  &:hover {
+    fill: #68B738;
+  }
+
+  &:active {
+    fill: #68B738;
+    opacity: 0.6;
   }
 }
