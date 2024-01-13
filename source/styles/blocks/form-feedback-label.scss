@@ -1,0 +1,11 @@
+.form-feedback-label {
+  @include form-label;
+  font-family: $primary-font;
+  align-self: center;
+  white-space: nowrap;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
+}

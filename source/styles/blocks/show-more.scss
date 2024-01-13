@@ -46,7 +46,7 @@
     width: 30px;
     height: 2px;
     background-color: #d3d3d3;
-    transform: translate(-50%) rotate(90deg)
+    transform: translate(-50%) rotate(90deg);
   }
 
   @media (min-width: $tablet-width) {
@@ -76,7 +76,7 @@
       width: 60px;
       height: 2px;
       background-color: #d3d3d3;
-      transform: translate(-50%) rotate(90deg)
+      transform: translate(-50%) rotate(90deg);
     }
   }
 
@@ -100,7 +100,7 @@
     margin: 0 auto;
     margin-bottom: 83px;
     font-size: 16px;
-    line-height: 18px
+    line-height: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,17 +109,18 @@
 }
 
 .show-more__button {
+  @include button(#f2f2f2, #444444);
   display: block;
   padding: 10px 0;
-  @include button(#f2f2f2, #444444);
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
 
-  &:hover  {
+  &:hover {
     background: #ebebeb;
   }
+
   &:active {
     color: rgba(68, 68, 68, 1);
     background: #ebebeb;

@@ -1,6 +1,8 @@
 .data-cat {
   max-width: 280px;
   margin: 0 auto;
+  padding: 0;
+  border: 0;
 
   @media (min-width: $tablet-width) {
     margin: 0;

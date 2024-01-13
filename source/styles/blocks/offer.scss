@@ -3,11 +3,6 @@
     display: flex;
     justify-content: space-between;
     max-height: 288px;
-  }
-}
-
-.offer__page {
-  @media (min-width: $desktop-width) {
     margin-bottom: 88px;
   }
 }

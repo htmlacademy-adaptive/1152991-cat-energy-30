@@ -8,12 +8,11 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    background-image: linear-gradient(180deg,#fff 138px,transparent 0px),linear-gradient(90deg,#f2f2f2 50%,#eaeaea 100%);
+    background-image: linear-gradient(180deg, #ffffff 138px, transparent 0%), linear-gradient(90deg, #f2f2f2 50%, #eaeaea 100%);
   }
 }
 
-.example__wrapper  {
-
+.example__wrapper {
   @media (min-width: $tablet-width) {
     padding-top: 45px;
   }

@@ -6,7 +6,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    border-bottom: 0
+    border-bottom: 0;
   }
 }
 
@@ -49,19 +49,15 @@
     line-height: 60px;
     margin-bottom: 39px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
-
 }
+
 .advantages__item {
   position: relative;
 
   &.advantages__item--leaf::before {
     content: "";
-    top: -2px;
     position: absolute;
+    top: -2px;
     width: 60px;
     height: 60px;
     background: url("../../images/leaf.svg") no-repeat center;
@@ -141,12 +137,7 @@
   @media (min-width: $tablet-width) {
     min-height: 230px;
   }
-
-  @media (min-width: $desktop-width) {
-
-  }
 }
-
 
 .advantages__description {
   color: $primary-font-color;
@@ -179,9 +170,5 @@
       color: #f2f2f2;
       z-index: -1;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-
   }
 }

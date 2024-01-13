@@ -1,0 +1,106 @@
+.additionally {
+  padding: 0;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
+}
+
+.additionally__legend {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+  }
+}
+
+.additionally__list {
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    max-width: 554px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 31px 123px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1184px;
+    flex-direction: row;
+    gap: 19px 0;
+    margin-bottom: 60px;
+  }
+}
+
+.additionally__item {
+  gap: 14px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.additionally__input:focus-visible + .additionally__label {
+  outline: 2px solid #444444;
+  outline-offset: 6px;
+}
+
+.additionally__input:checked + .additionally__label::before {
+  background-image: url("../../images/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+}
+
+.additionally__label {
+  @include form-label;
+  font-family: $primary-font;
+  position: relative;
+  display: inline-block;
+  padding-left: 45px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ededed;
+  }
+
+  &:hover::before {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+    min-width: 210px;
+    padding-left: 58px;
+
+    &::before {
+      content: "";
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

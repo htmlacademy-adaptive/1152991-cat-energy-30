@@ -100,12 +100,12 @@
   }
 
   &:hover::before {
-    background: #68B738;
+    background: #68b738;
   }
 
   &:active::before {
-    background: #68B738;
-    opacity: .6;
+    background: #68b738;
+    opacity: 0.6;
   }
 
   @media (min-width: $tablet-width) {
@@ -123,11 +123,11 @@
   fill: #666666;
 
   &:hover {
-    fill: #68B738;
+    fill: #68b738;
   }
 
   &:active {
-    fill: #68B738;
+    fill: #68b738;
     opacity: 0.6;
   }
 }

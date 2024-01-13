@@ -17,7 +17,7 @@ const screenWidth = window.screen.width;
 function initMap() {
 
   const centerSize = creatCenter(screenWidth);
-
+  /* eslint-disable */
   const map = new ymaps.Map('map', {
     center: centerSize,
     zoom: 16
@@ -44,6 +44,7 @@ function initMap() {
 }
 
 ymaps.ready(initMap);
+/* eslint-enable */
 
 function creatCenter(screen) {
   if (screen < 768) {

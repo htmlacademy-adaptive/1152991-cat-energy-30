@@ -19,7 +19,6 @@
       border-bottom: 1px solid #cdcdcd;
       padding-bottom: 28px;
     }
-
   }
 
   @media (min-width: $desktop-width) {
@@ -99,9 +98,9 @@
 }
 
 .additional-card__button {
+  @include button;
   font-family: $primary-font;
   grid-column: 3/1;
-  @include button;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
