@@ -8,24 +8,23 @@
   }
 }
 
-@mixin button($bg-color: #68B738, $text-color: #ffffff) {
+@mixin button($bg-color: $button-color, $text-color: $button-text-color) {
   background-color: $bg-color;
   color: $text-color;
   border: 0;
   text-transform: uppercase;
 }
 
-@mixin form-label($color: #444444, $font-size: 16px, $line-height: 18px) {
+@mixin form-label($color: $primary-font-color, $font-size: 16px, $line-height: 18px) {
   color: $color;
   font-size: $font-size;
   line-height: $line-height;
   text-transform: uppercase;
 }
 
-@mixin form-input($color: #444444, $font-size: 16px, $line-height: 18px) {
+@mixin form-input($color: $primary-font-color, $font-size: 16px, $line-height: 18px) {
   color: $color;
   font-size: $font-size;
   line-height: $line-height;
   text-transform: uppercase;
 }
-

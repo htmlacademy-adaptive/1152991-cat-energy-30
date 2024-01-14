@@ -1,0 +1,128 @@
+.show-more {
+  padding: 24px 20px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 37px 40px;
+    margin-top: 85px;
+    border: 2px solid $secondary-background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 430px;
+  }
+}
+
+
+.show-more__title {
+  position: relative;
+  color: #111111;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 8px;
+  padding-top: 53px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    transform: translate(-50%) rotate(90deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    padding-top: 73px;
+    font-size: 20px;
+    line-height: 24px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 50%;
+      transform: translate(-50%);
+      width: 60px;
+      height: 2px;
+      background-color: #d3d3d3;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 50%;
+      width: 60px;
+      height: 2px;
+      background-color: #d3d3d3;
+      transform: translate(-50%) rotate(90deg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
+    padding-top: 65px;
+  }
+}
+
+.show-more__subtitle {
+  font-family: $secondary-font;
+  color: $primary-font-color;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 170px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
+  }
+}
+
+.show-more__button {
+  @include button(#f2f2f2, #444444);
+  display: block;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 1);
+    background: #ebebeb;
+  }
+}

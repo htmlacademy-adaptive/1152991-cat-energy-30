@@ -1,19 +1,49 @@
-.catalog {
-  width: calc(100% - 40px);
-  margin: 0 auto;
+.catalog__wrapper {
+  width: 100%;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 60px);
+    width: 708px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
-    width: calc(100% - 220px);
+    width: 1220px;
   }
 }
 
 .catalog__title {
-  color: #000000;
+  color: $secondary-font-color;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+  padding-left: 20px;
+  margin: 0;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin-bottom: 84px;
+  }
+}
+
+.additional-card__price {
+  font-family: $secondary-font;
+  color: $primary-font-color;
+  text-align: right;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }

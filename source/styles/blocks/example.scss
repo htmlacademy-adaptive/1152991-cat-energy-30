@@ -1,82 +1,79 @@
 .example {
   background-color: #eaeaea;
-  color: #000000;
-
-  width: calc(100% - 40px);
-  margin: 0 auto;
+  color: $secondary-font-color;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 60px);
+    background-color: $primary-background-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    background-image: linear-gradient(180deg, #ffffff 138px, transparent 0%), linear-gradient(90deg, #f2f2f2 50%, #eaeaea 100%);
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $tablet-width) {
+    padding-top: 45px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     width: 100%;
-    margin: 0;
+    margin-bottom: 75px;
+    padding: 0;
   }
 }
 
 .example__description-wrapper {
+  padding-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 110px;
   }
 }
 
 .example__title {
-  text-align: center;
+  text-align: left;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-}
-
-.example__subtitle {
-  color: #444444;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.example__item-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: 0;
+  margin-bottom: 40px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
-    & .example__expenses {
-      margin-left: 167px;
-    }
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 336px;
-    justify-content: start;
-
-    & .example__expenses {
-      margin-left: 0;
-    }
+    margin-bottom: 146px;
   }
 }
 
-.example__item {
-  display: flex;
-  flex-direction: column;
-}
-
-.example__caption {
-  text-align: center;
-  font-size: 24px;
-}
-
-.example__description {
+.example__subtitle {
   font-family: $secondary-font;
-  color: #444444;
-  text-align: center;
-  font-size: 12px;
-  line-height: 100%;
-}
-
-.example__expenses {
-  text-align: center;
+  color: $primary-font-color;
   font-size: 14px;
-  line-height: 20px;
-  text-transform: uppercase;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+  word-break: break-word;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 436px;
+    margin-bottom: 69px;
+  }
 }

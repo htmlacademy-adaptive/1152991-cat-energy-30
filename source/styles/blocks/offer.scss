@@ -1,0 +1,8 @@
+.offer {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    max-height: 288px;
+    margin-bottom: 88px;
+  }
+}

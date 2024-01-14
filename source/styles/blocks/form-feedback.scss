@@ -1,59 +1,118 @@
 .form-feedback {
-  width: calc(100% - 40px);
-  margin: 0 auto;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: calc(100% - 140px);
+    max-width: 708px;
+    margin: 0 auto;
+    padding: 0 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: calc(100% - 220px);
+    max-width: 1220px;
+    padding: 0;
+    margin: 0 auto;
   }
 }
 
-.form-feedback__legend {
-  color: #000000;
-  font-size: 24px;
-  line-height: 26px;
+.form-feedback__wrpapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    gap: 0;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-bottom: 70px;
+  }
 }
 
-.form-feedback__label {
-  @include form-label;
-  font-family: $primary-font;
+.form-feedback__fieldset {
+  padding: 0;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+  }
 }
 
-.form-feedback__input {
-  @include form-input;
-  font-family: $primary-font;
+.form-feedback__list--cat {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+  }
 }
 
-.form-feedback__label-radio {
-  @include form-label;
-  font-family: $primary-font;
-}
+.form-feedback__submit-wrapper {
+  max-width: 280px;
+  margin: 0 auto;
 
-.form-feedback__textarea-text {
-  @include form-input;
-  font-family: $primary-font;
-}
+  @media (min-width: $tablet-width) {
+    display: flex;
+    gap: 0 60px;
+    max-width: 628px;
+    margin: 0;
+    margin-bottom: 60px;
+  }
 
-.form-feedback__label-checkbox {
-  @include form-label;
-  font-family: $primary-font;
+  @media (min-width: $desktop-width) {
+    max-width: 1220px;
+    gap: 0 82px;
+    margin-bottom: 80px;
+  }
 }
 
 .form-feedback__button {
   @include button;
+  width: 100%;
+  padding: 10px 44px;
+  margin-bottom: 21px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  font-family: inherit;
+
+  @media (min-width: $tablet-width) {
+    max-width: 284px;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px 44px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    padding: 14px 188px;
+  }
 }
 
 .form-feedback__notification {
+  display: block;
+  margin-bottom: 32px;
   font-family: $secondary-font;
-  color: #000000;
+  color: $secondary-font-color;
   text-align: center;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    margin: 0;
+    align-self: center;
+  }
 }

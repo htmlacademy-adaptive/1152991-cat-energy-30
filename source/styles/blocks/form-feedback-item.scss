@@ -1,0 +1,12 @@
+.form-feedback-item {
+  max-width: 280px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    max-width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
+  }
+}
