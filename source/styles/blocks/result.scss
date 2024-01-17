@@ -28,34 +28,36 @@
 }
 
 .result__item {
-  position: relative;
-  width: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 124px;
+  height: 55px;
   padding-top: 15px;
-  padding-bottom: 16px;
   border: 1px solid #cdcdcd;
   border-radius: 5px;
   align-self: center;
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    width: 162px;
+    min-width: 162px;
+    height: 73px;
   }
 }
 
 .result__caption {
   text-align: center;
   font-size: 24px;
+  margin-bottom: 6px;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 10px;
   }
 }
 
 .result__description {
-  position: absolute;
-  left: 15px;
-  bottom: -14px;
   padding: 0 17px;
   font-family: $secondary-font;
   background: #eaeaea;
@@ -100,7 +102,7 @@
   @media (min-width: $desktop-width) {
     text-align: left;
     margin: 0;
-    margin-top: 31px;
+    margin-top: 28px;
   }
 }
 

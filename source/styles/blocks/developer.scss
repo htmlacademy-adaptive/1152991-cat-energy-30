@@ -12,7 +12,17 @@
   color: $primary-font-color;
   fill: #666666;
   max-height: 34px;
+  transition: 0.4s;
   margin-top: 19px;
+
+  &:hover {
+    fill: $icon-color-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+    fill: $icon-color-hover;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -26,13 +36,4 @@
   font-size: 16px;
   line-height: 20px;
   margin: 0;
-}
-
-.developer__link:hover {
-  fill: $icon-color-hover;
-}
-
-.developer__link:active {
-  opacity: 0.3;
-  fill: $icon-color-hover;
 }
