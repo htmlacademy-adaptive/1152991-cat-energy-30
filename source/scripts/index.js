@@ -1,17 +1,19 @@
 /* в этот файл добавляет скрипты*/
-
 // menu
 const navToggle = document.querySelector('.main-header__toggle');
 const navMain = document.querySelector('.main-nav');
 
 navMain.classList.remove('main-nav--nojs');
 
-navToggle.addEventListener('touchend', () => {
+navToggle.addEventListener('click', () => {
   navToggle.classList.toggle('main-header__toggle--close');
   navMain.classList.toggle('main-nav--opened');
 });
 
 // map
+const mapImage = document.querySelector('.map__img');
+mapImage.style.display = 'none';
+
 const screenWidth = window.screen.width;
 
 function initMap() {

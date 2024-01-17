@@ -3,8 +3,9 @@
   max-width: 280px;
   background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../../images/cat-backpack-small@1x.webp" 1x, "../../images/cat-backpack-small@2x.webp" 2x);
   background-position: center top;
-  background-size: 100% 290px;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  padding-top: 140px;
   min-height: 290px;
 
   &::before {
@@ -20,11 +21,12 @@
   }
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../../images/cat-backpack-big@1x.webp" 1x, "../../images/cat-backpack-big@2x.webp" 2x);
+    background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../../images/cat-backpack-big@1x.webp" 1x, "/../../images/cat-backpack-big@2x.webp" 2x);
     min-height: 200px;
     max-width: 708px;
     object-fit: cover;
     background-size: 100% 100%;
+    padding: 0;
 
     &::before {
       left: 118px;
@@ -34,9 +36,10 @@
   @media (min-width: $desktop-width) {
     background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../../images/cat-backpack-small@1x.webp" 1x, "../../images/cat-backpack-small@2x.webp" 2x);
     background-position: center top;
-    background-size: 100% 288px;
+    padding-top: 140px;
     background-repeat: no-repeat;
     min-width: 245px;
+    background-size: 100% 100%;
 
     &::before {
       left: 50%;

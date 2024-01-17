@@ -101,11 +101,13 @@
 
   &:hover::before {
     background: #68b738;
+    transition: 0.4s;
   }
 
   &:active::before {
     background: #68b738;
     opacity: 0.6;
+    transition: 0.4s;
   }
 
   @media (min-width: $tablet-width) {
@@ -121,6 +123,7 @@
 
 .demo-progress__svg {
   fill: #666666;
+  transition: 0.3s;
 
   &:hover {
     fill: #68b738;
