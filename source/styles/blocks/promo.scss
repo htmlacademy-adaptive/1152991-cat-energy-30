@@ -1,6 +1,6 @@
 .promo {
   color: $inverted-font-color;
-  background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../../images/index-background-mobile@1x.webp" 1x, "../../images/index-background-mobile@2x.webp" 2x);
+  background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("./../images/index-background-mobile@1x.webp" 1x, "./../images/index-background-mobile@2x.webp" 2x);
   background-position: center top;
   background-size: 100% 302px;
   background-repeat: no-repeat;
@@ -18,7 +18,7 @@
     &::after {
       content: "";
       position: absolute;
-      background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("../../images/index-background-desktop@1x.webp" 1x, "../../images/index-background-desktop@2x.webp" 2x) no-repeat;
+      background: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set("./../images/index-background-desktop@1x.webp" 1x, "./../images/index-background-desktop@2x.webp" 2x) no-repeat;
       background-position: left top;
       background-size: 100% 100%;
       width: 50%;
