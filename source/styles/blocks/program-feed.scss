@@ -56,7 +56,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
+    align-items: center;
+    min-height: 38px;
   }
 }
 
@@ -124,5 +126,10 @@
       height: 18px;
       left: 11px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 58px;
+    align-self: end;
   }
 }

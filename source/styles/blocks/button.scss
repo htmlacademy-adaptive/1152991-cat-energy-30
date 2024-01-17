@@ -1,8 +1,12 @@
-.button:hover {
-  background: $button-condition-background;
-}
+.button {
+  transition: 0.4s;
 
-.button:active {
-  background: $button-condition-background;
-  color: rgba(255, 255, 255, 0.3);
+  &:hover {
+    background: $button-condition-background;
+  }
+
+  &:active {
+    background: $button-condition-background;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

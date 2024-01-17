@@ -14,7 +14,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 76px;
+    margin-bottom: 79px;
   }
 }
 
@@ -25,6 +25,10 @@
   @media (min-width: $tablet-width) {
     max-width: 628px;
     margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
   }
 }
 

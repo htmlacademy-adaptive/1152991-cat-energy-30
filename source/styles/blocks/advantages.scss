@@ -57,79 +57,79 @@
   &.advantages__item--leaf::before {
     content: "";
     position: absolute;
-    top: -2px;
+    top: -3px;
     width: 60px;
     height: 60px;
-    background: url("../../images/leaf.svg") no-repeat center;
-    background-color: $inverted-background-color;
+    background: url("../../images/leaf.svg") no-repeat center $inverted-background-color;
 
     @media (min-width: $tablet-width) {
-      top: 30px;
+      top: 31px;
       width: 80px;
       height: 80px;
     }
 
     @media (min-width: $desktop-width) {
+      top: 33px;
       background-size: 25px;
     }
   }
 
   &.advantages__item--powder::before {
     content: "";
-    top: -2px;
+    top: -3px;
     position: absolute;
     width: 60px;
     height: 60px;
-    background: url("../../images/powder.svg") no-repeat center;
-    background-color: $inverted-background-color;
+    background: url("../../images/powder.svg") no-repeat center $inverted-background-color;
 
     @media (min-width: $tablet-width) {
-      top: 30px;
+      top: 31px;
       width: 80px;
       height: 80px;
     }
 
     @media (min-width: $desktop-width) {
+      top: 33px;
       background-size: 25px;
     }
   }
 
   &.advantages__item--dining::before {
     content: "";
-    top: -2px;
+    top: -3px;
     position: absolute;
     width: 60px;
     height: 60px;
-    background: url("../../images/dining.svg") no-repeat center;
-    background-color: $inverted-background-color;
+    background: url("../../images/dining.svg") no-repeat center $inverted-background-color;
 
     @media (min-width: $tablet-width) {
-      top: 30px;
+      top: 31px;
       width: 80px;
       height: 80px;
     }
 
     @media (min-width: $desktop-width) {
+      top: 33px;
       background-size: 25px;
     }
   }
 
   &.advantages__item--clock::before {
     content: "";
-    top: -2px;
+    top: -3px;
     position: absolute;
     width: 60px;
     height: 60px;
-    background: url("../../images/clock.svg") no-repeat center;
-    background-color: $inverted-background-color;
+    background: url("../../images/clock.svg") no-repeat center $inverted-background-color;
 
     @media (min-width: $tablet-width) {
-      top: 30px;
+      top: 31px;
       width: 80px;
       height: 80px;
     }
 
     @media (min-width: $desktop-width) {
+      top: 33px;
       background-size: 32px;
     }
   }
