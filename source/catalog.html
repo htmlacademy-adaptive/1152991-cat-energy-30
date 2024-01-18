@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="./fonts/oswald/oswald-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/lato/lato-400.woff2" as="font" crossorigin="anonymous">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ffb3cf94-46ab-4393-ad7f-04f46a232455&lang=ru_RU" defer></script>
     <script src="scripts/index.js" defer></script>
   </head>
@@ -165,7 +167,7 @@
                 <picture>
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/fish-big-desktop@1x.webp 1x, images/fish-big-desktop@2x.webp 2x" width="172" height="196">
                   <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-big-tablet@1x.webp 1x, images/fish-big-tablet@2x.webp 2x" width="168" height="200">
-                  <source type="image/webp" srcset="images/chicken-big-mobile@1x.webp, images/fish-big-mobile@2x.webp 2x" width="84" height="100">
+                  <source type="image/webp" srcset="images/fish-big-mobile@1x.webp, images/fish-big-mobile@2x.webp 2x" width="84" height="100">
 
                   <source type="image/png" media="(min-width: 1440px)" srcset="images/fish-big-desktop@1x.png 1x, images/fish-big-desktop@2x.png 2x" width="172" height="196">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/fish-big-tablet@1x.png 1x, images/fish-big-tablet@2x.png 2x" width="168" height="200">
@@ -421,7 +423,7 @@
           </li>
         </ul>
         <div class="footer__developer-wrapper developer">
-          <a class="developer__link" href="#">
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="developer__title">HTML Academy</p>
             <svg class="developer__logo"  width="27" height="34">
               <use href="images/stack.svg#html-academy"></use>

@@ -30,8 +30,9 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     min-width: 1220px;
-    gap: 85px;
+    gap: 40px 85px;
     margin-bottom: 70px;
   }
 }
@@ -60,6 +61,18 @@
   width: 100%;
 }
 
+.contacts-owner__input {
+  padding-right: 35px;
+
+  &:focus:invalid + .contacts-owner__input-svg {
+    stroke: #68b738;
+  }
+
+  &:user-invalid + .contacts-owner__input-svg {
+    stroke: #ff8282;
+  }
+}
+
 .contacts-owner__input-svg {
   position: absolute;
   fill: transparent;
@@ -67,8 +80,4 @@
   transform: translateY(-50%);
   right: 12px;
   stroke: #000000;
-}
-
-.contacts-owner__input-svg:active {
-  stroke: #68b738;
 }

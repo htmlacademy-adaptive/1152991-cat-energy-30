@@ -43,6 +43,11 @@
   gap: 14px;
   margin-bottom: 13px;
 
+  & .additionally__input:disabled + .additionally__label {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin: 0;
   }

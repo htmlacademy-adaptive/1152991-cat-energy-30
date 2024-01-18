@@ -12,9 +12,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-self: flex-start;
     padding: 0;
     width: 100%;
-    background: #f2f2f2;
+    background-image: linear-gradient(180deg, #ffffff 138px, transparent 0), linear-gradient(90deg, #f2f2f2 50%, #eaeaea 100%);
   }
 }
 
@@ -47,7 +48,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 83px;
+    bottom: -57px;
     left: 50px;
   }
 }
@@ -63,7 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 82px;
+    bottom: -57px;
     right: 110px;
   }
 }
@@ -117,7 +118,7 @@
 
   @media (min-width: $desktop-width) {
     left: 46%;
-    top: 121px;
+    top: 260px;
   }
 }
 

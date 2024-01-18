@@ -6,7 +6,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 61px 61px;
+    align-items: end;
+    gap: 61px 60px;
   }
 
   @media (min-width: $desktop-width) {

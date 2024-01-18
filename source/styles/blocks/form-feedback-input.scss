@@ -28,14 +28,7 @@
   &:user-invalid {
     border-color: #ff8282;
     outline: 1px solid #ff8282;
-  }
-
-  &:user-invalid + .contacts-owner__input-svg {
     stroke: #ff8282;
-  }
-
-  &:focus:invalid + .contacts-owner__input-svg {
-    stroke: #68b738;
   }
 
   @media (min-width: $tablet-width) {
@@ -43,8 +36,4 @@
     line-height: normal;
     padding: 11px 20px;
   }
-}
-
-.form-feedback-input--email {
-  padding-right: 35px;
 }

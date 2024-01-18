@@ -9,6 +9,8 @@
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="./fonts/oswald/oswald-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/lato/lato-400.woff2" as="font" crossorigin="anonymous">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ffb3cf94-46ab-4393-ad7f-04f46a232455&lang=ru_RU" defer></script>
     <script src="scripts/index.js" defer></script>
   </head>
@@ -108,7 +110,7 @@
             <li class="contacts-owner__item form-feedback-item">
               <label class="form-feedback-label" for="email">E-mail:*</label>
               <div class="contacts-owner__input-wrapper">
-                <input class="form-feedback-input form-feedback-input--email" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
+                <input class="contacts-owner__input form-feedback-input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="contacts-owner__input-svg" width="20" height="20" aria-hidden="true" focusable="false">
                   <use href="images/stack.svg#email"></use>
                 </svg>
@@ -117,7 +119,7 @@
             <li class="contacts-owner__item form-feedback-item">
               <label class="form-feedback-label" for="phone">Телефон:*</label>
               <div class="contacts-owner__input-wrapper">
-                <input class="form-feedback-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="contacts-owner__input form-feedback-input" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
                 <svg class="contacts-owner__input-svg" width="20" height="20" aria-hidden="true" focusable="false">
                   <use href="images/stack.svg#phone"></use>
                 </svg>
@@ -224,7 +226,7 @@
           </li>
         </ul>
         <div class="footer__developer-wrapper developer">
-          <a class="developer__link" href="#">
+          <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="developer__title">HTML Academy</p>
             <svg class="developer__logo" width="27" height="34">
               <use href="images/stack.svg#html-academy"></use>
