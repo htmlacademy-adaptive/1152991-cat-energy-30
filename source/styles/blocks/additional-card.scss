@@ -98,6 +98,25 @@
   }
 }
 
+.additional-card__price {
+  font-family: $secondary-font;
+  color: $primary-font-color;
+  text-align: right;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    min-width: 40px;
+  }
+}
+
 .additional-card__button {
   @include button;
   font-family: $primary-font;

@@ -47,6 +47,11 @@
   gap: 14px;
   margin-bottom: 13px;
 
+  & .program-feed__radio:disabled + .program-feed__label-radio {
+    pointer-events: none;
+    opacity: 0.3;
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -74,6 +79,11 @@
   display: inline-block;
   padding: 6px 0 6px 45px;
   cursor: pointer;
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.3;
+  }
 
   &::before {
     content: "";
